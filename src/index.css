@@ -1,0 +1,126 @@
+:root {
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Marker Felt', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Light Theme (Default) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9f9f9;
+  --bg-dots: #4D96FF;
+  --text-primary: #000000;
+  --text-secondary: #333333;
+  
+  /* Cartoon Theme Colors */
+  --c-yellow: #FFD93D;
+  --c-red: #FF6B6B;
+  --c-green: #6BCB77;
+  --c-blue: #4D96FF;
+  --c-white: #FFFFFF;
+  --c-black: #000000;
+  
+  --border-thick: 3px solid var(--text-primary);
+  --shadow-hard: 4px 4px 0px var(--text-primary);
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0f0f0f;
+  --bg-secondary: #1a1a1a;
+  --bg-dots: #FFD93D;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  
+  /* Darker, more vibrant colors for dark mode */
+  --c-yellow: #FFD93D;
+  --c-red: #FF6B6B;
+  --c-green: #6BCB77;
+  --c-blue: #5DA7FF;
+  --c-white: #1f1f1f;
+  --c-black: #ffffff;
+  
+  --border-thick: 3px solid var(--text-primary);
+  --shadow-hard: 4px 4px 0px rgba(255, 255, 255, 0.5);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  background-image: radial-gradient(var(--bg-dots) 2px, transparent 2.5px);
+  background-size: 30px 30px;
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-shadow: 2px 2px 0px var(--c-yellow);
+}
+
+button {
+  border-radius: 12px;
+  border: var(--border-thick);
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  font-weight: 900;
+  font-family: inherit;
+  background-color: var(--c-white);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-hard);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-transform: uppercase;
+}
+
+button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--text-primary);
+}
+
+button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px var(--text-primary);
+}
+
+/* Advanced Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-out;
+}
