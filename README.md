@@ -1,6 +1,6 @@
-# USA Votes! 🇺🇸
+# Ethiopia Votes! 🇪🇹
 
-A decentralized voting application built on Ethereum blockchain for the 2024 Presidential Election. Features a modern, responsive UI with dark/light themes, real-time results, and party logos.
+A decentralized voting application built on Ethereum blockchain for the 2026 Ethiopian Presidential Election. Features a modern, responsive UI with dark/light themes, real-time results, and authentic Ethiopian party logos.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Solidity](https://img.shields.io/badge/Solidity-0.8.24-orange.svg)
@@ -21,10 +21,10 @@ A decentralized voting application built on Ethereum blockchain for the 2024 Pre
 
 ## 🏛️ Political Parties
 
-- **Democrat** 🔵 - Blue Donkey
-- **Republican** 🔴 - Red Elephant
-- **Libertarian** 🟡 - Porcupine
-- **Green Party** 🟢 - Sunflower
+- **Prosperity Party** 🟡 - Glowing Bulb (Ruling Party)
+- **EZEMA** 🔵 - Scales of Justice (Ethiopian Citizens for Social Justice)
+- **NAMA** 🔴 - Double-Headed Eagle (National Movement of Amhara)
+- **OFC** 🟢 - Tree with Star (Oromo Federalist Congress)
 - **Independent** ⚪ - Generic Icon
 
 ## 🛠️ Tech Stack
@@ -84,7 +84,7 @@ npx hardhat run scripts/deploy.ts --network localhost
 
 **Copy the deployed contract address!** It should look like:
 ```
-Voting contract deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
+Voting contract deployed to: 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
 ```
 
 ### 4. Initialize Election
@@ -96,7 +96,7 @@ npx hardhat run scripts/initialize.ts --network localhost
 
 You should see:
 ```
-Election initialized successfully! 🇺🇸
+Election initialized successfully! 🇪🇹
 Poll count: 1
 ```
 
@@ -328,6 +328,6 @@ If you encounter issues:
 
 ---
 
-**Built with ❤️ for decentralized democracy** 🇺🇸
+**Built with ❤️ for decentralized democracy** 🇪🇹
 
 **Enjoy voting!** 🗳️
