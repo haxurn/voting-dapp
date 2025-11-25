@@ -1,8 +1,9 @@
-import { ethers } from "hardhat";
+import "@nomicfoundation/hardhat-toolbox";
+import hre from "hardhat";
 
 async function main() {
     const address = "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0";
-    const voting = await ethers.getContractAt("Voting", address);
+    const voting = await hre.ethers.getContractAt("Voting", address);
 
     console.log("Initializing 2026 Presidential Election...");
 

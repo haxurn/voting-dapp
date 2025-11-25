@@ -1,8 +1,9 @@
-import { ethers } from "hardhat";
+import "@nomicfoundation/hardhat-toolbox";
+import hre from "hardhat";
 
 async function main() {
     // Generate a new random wallet
-    const wallet = ethers.Wallet.createRandom();
+    const wallet = hre.ethers.Wallet.createRandom();
 
     console.log("\n=== New Voter Address Generated ===\n");
     console.log("Address:", wallet.address);

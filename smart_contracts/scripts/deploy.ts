@@ -1,7 +1,8 @@
-import { ethers } from "hardhat";
+import "@nomicfoundation/hardhat-toolbox";
+import hre from "hardhat";
 
 async function main() {
-    const Voting = await ethers.getContractFactory("Voting");
+    const Voting = await hre.ethers.getContractFactory("Voting");
     const voting = await Voting.deploy();
 
     await voting.waitForDeployment();
