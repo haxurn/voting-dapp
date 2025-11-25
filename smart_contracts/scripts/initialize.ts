@@ -1,19 +1,19 @@
 import { ethers } from "hardhat";
 
 async function main() {
-    const address = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+    const address = "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0";
     const voting = await ethers.getContractAt("Voting", address);
 
-    console.log("Initializing 2024 Presidential Election...");
+    console.log("Initializing 2026 Presidential Election...");
 
     const tx = await voting.createPoll(
-        "Which party do you support for the 2024 Presidential Election?",
-        ["Democrat", "Republican", "Libertarian", "Green Party", "Independent"]
+        "Which party do you support for the 2026 Presidential Election?",
+        ["Prosperity Party", "Ezema", "NAMA", "OFC", "Independent"]
     );
 
     console.log("Transaction sent:", tx.hash);
     await tx.wait();
-    console.log("Election initialized successfully! 🇺🇸");
+    console.log("Election initialized successfully! 🇪🇹");
 
     const count = await voting.pollCount();
     console.log("Poll count:", count.toString());
