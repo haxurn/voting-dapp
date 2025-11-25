@@ -11,7 +11,7 @@ export default function SetupGuide({ isOpen, onClose }: SetupGuideProps) {
 
     const steps = [
         {
-            title: "Welcome to USA Votes! 🇺🇸",
+            title: "Welcome to Ethiopia Votes! 🇪🇹",
             content: "This is a decentralized voting application built on Ethereum blockchain. Let's get you set up!",
             icon: "👋"
         },
@@ -37,7 +37,7 @@ export default function SetupGuide({ isOpen, onClose }: SetupGuideProps) {
         },
         {
             title: "Step 5: Initialize Election (Admin)",
-            content: "Switch to 'Admin Dashboard' and click 'Initialize 2024 Presidential Election'. Confirm the transaction in MetaMask.",
+            content: "Switch to 'Admin Dashboard' and click 'Initialize 2026 Presidential Election'. Confirm the transaction in MetaMask.",
             icon: "⚙️"
         },
         {

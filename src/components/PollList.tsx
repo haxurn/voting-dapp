@@ -13,12 +13,12 @@ interface PollListProps {
     addToast: (message: string, type: 'success' | 'error' | 'info') => void;
 }
 
-// Image mapping for US parties
+// Image mapping for Ethiopian parties
 const PARTY_IMAGES: { [key: string]: string } = {
-    "Democrat": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/DemocraticLogo.svg/240px-DemocraticLogo.svg.png",
-    "Republican": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Republicanlogo.svg/240px-Republicanlogo.svg.png",
-    "Libertarian": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Libertarian_Party_Porcupine.svg/240px-Libertarian_Party_Porcupine.svg.png",
-    "Green Party": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Green_Party_of_the_United_States_logo.svg/240px-Green_Party_of_the_United_States_logo.svg.png",
+    "Prosperity Party": "/party-logos/prosperity-party.png",
+    "Ezema": "/party-logos/ezema.png",
+    "NAMA": "/party-logos/nama.png",
+    "OFC": "/party-logos/ofc.png",
     "Independent": "https://cdn-icons-png.flaticon.com/512/9408/9408175.png"
 };
 

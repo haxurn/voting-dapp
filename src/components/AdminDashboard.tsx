@@ -27,11 +27,11 @@ export default function AdminDashboard({ contract, addToast }: AdminDashboardPro
             if (Number(count) === 0) {
                 addToast("Initializing election... Please confirm in MetaMask", "info");
                 const tx = await contract.createPoll(
-                    "Which party do you support for the 2024 Presidential Election?",
-                    ["Democrat", "Republican", "Libertarian", "Green Party", "Independent"]
+                    "Which party do you support for the 2026 Presidential Election?",
+                    ["Prosperity Party", "Ezema", "NAMA", "OFC", "Independent"]
                 );
                 await tx.wait();
-                addToast("Election Initialized! 🇺🇸", "success");
+                addToast("Election Initialized! 🇪🇹", "success");
                 setTimeout(() => window.location.reload(), 1000);
             } else {
                 addToast("Election already active!", "info");
@@ -52,7 +52,7 @@ export default function AdminDashboard({ contract, addToast }: AdminDashboardPro
             <div className="admin-controls">
                 <p>Manage the election process here.</p>
                 <button onClick={initializeElection} className="action-btn">
-                    Initialize 2024 Presidential Election
+                    Initialize 2026 Ethiopian Presidential Election
                 </button>
             </div>
         </div>
